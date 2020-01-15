@@ -1,0 +1,89 @@
+Using config: {'_model_dir': 'results/model', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 120, '_session_config': allow_soft_placement: true
+graph_options {
+  rewrite_options {
+    meta_optimizer_iterations: ONE
+  }
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x7f42c13de978>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+Not using Distribute Coordinator.
+Running training and evaluation locally (non-distributed).
+Start train and evaluate loop. The evaluate will happen after every checkpoint. Checkpoint frequency is determined based on RunConfig arguments: save_checkpoints_steps None or save_checkpoints_secs 120.
+Calling model_fn.
+From /home/rashi/Desktop/summer intern 2019/tf_ner-master/models/chars_conv_lstm_crf/main.py:215: dropout (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.dropout instead.
+From /home/rashi/anaconda3/lib/python3.7/site-packages/tensorflow/python/keras/layers/core.py:143: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+From /home/rashi/Desktop/intern/masked_conv.py:16: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+From /home/rashi/Desktop/intern/masked_conv.py:24: conv1d (from tensorflow.python.layers.convolutional) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.conv1d instead.
+From /home/rashi/anaconda3/lib/python3.7/site-packages/tensorflow/contrib/rnn/python/ops/lstm_ops.py:696: to_int64 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+From /home/rashi/Desktop/summer intern 2019/tf_ner-master/models/chars_conv_lstm_crf/main.py:245: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.dense instead.
+From /home/rashi/anaconda3/lib/python3.7/site-packages/tensorflow/contrib/crf/python/ops/crf.py:567: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+From /home/rashi/anaconda3/lib/python3.7/site-packages/tensorflow/python/ops/rnn.py:626: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+From /home/rashi/anaconda3/lib/python3.7/site-packages/tensorflow/python/ops/math_grad.py:102: div (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Deprecated in favor of operator or tf.math.divide.
+Done calling model_fn.
+Create CheckpointSaverHook.
+Graph was finalized.
+From /home/rashi/anaconda3/lib/python3.7/site-packages/tensorflow/python/training/saver.py:1266: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+Restoring parameters from results/model/model.ckpt-60
+From /home/rashi/anaconda3/lib/python3.7/site-packages/tensorflow/python/training/saver.py:1070: get_checkpoint_mtimes (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file utilities to get mtimes.
+Running local_init_op.
+Done running local_init_op.
+Saving checkpoints for 60 into results/model/model.ckpt.
+From /home/rashi/anaconda3/lib/python3.7/site-packages/tensorflow/python/summary/summary_iterator.py:68: tf_record_iterator (from tensorflow.python.lib.io.tf_record) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use eager execution and: 
+`tf.data.TFRecordDataset(path)`
+loss = 0.0302248, step = 61
+Saving checkpoints for 72 into results/model/model.ckpt.
+From /home/rashi/anaconda3/lib/python3.7/site-packages/tensorflow/python/training/saver.py:966: remove_checkpoint (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to delete files with this prefix.
+Calling model_fn.
+Done calling model_fn.
+Starting evaluation at 2019-06-27T06:05:20Z
+Graph was finalized.
+Restoring parameters from results/model/model.ckpt-72
+Running local_init_op.
+Done running local_init_op.
+Finished evaluation at 2019-06-27-06:05:22
+Saving dict for global step 72: acc = 1.0, f1 = 1.0, global_step = 72, loss = 0.008964539, precision = 1.0, recall = 1.0
+Saving 'checkpoint_path' summary for global step 72: results/model/model.ckpt-72
+Loss for final step: 0.021842193.
+Calling model_fn.
+Done calling model_fn.
+Graph was finalized.
+Restoring parameters from results/model/model.ckpt-72
+Running local_init_op.
+Done running local_init_op.
+Calling model_fn.
+Done calling model_fn.
+Graph was finalized.
+Restoring parameters from results/model/model.ckpt-72
+Running local_init_op.
+Done running local_init_op.
+Calling model_fn.
+Done calling model_fn.
+Graph was finalized.
+Restoring parameters from results/model/model.ckpt-72
+Running local_init_op.
+Done running local_init_op.

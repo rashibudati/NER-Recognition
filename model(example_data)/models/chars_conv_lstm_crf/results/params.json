@@ -1,0 +1,16 @@
+{
+    "batch_size": 20,
+    "buffer": 15000,
+    "chars": "/home/rashi/Desktop/summer intern 2019/tf_ner-master/data/example/vocab.chars.txt",
+    "dim": 300,
+    "dim_chars": 100,
+    "dropout": 0.5,
+    "epochs": 25,
+    "filters": 50,
+    "glove": "/home/rashi/Desktop/summer intern 2019/tf_ner-master/data/example/glove.npz",
+    "kernel_size": 3,
+    "lstm_size": 100,
+    "num_oov_buckets": 1,
+    "tags": "/home/rashi/Desktop/summer intern 2019/tf_ner-master/data/example/vocab.tags.txt",
+    "words": "/home/rashi/Desktop/summer intern 2019/tf_ner-master/data/example/vocab.words.txt"
+}
